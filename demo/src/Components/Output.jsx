@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
-import { useContext } from 'react'
-import { Context } from './Context'
+import useDemo from './Context'
 
 
 function Output() {
- const{message}=useContext(Context)
+ const{message}=useDemo();
  
   return (
     <div>your entered message is: {message}</div>
